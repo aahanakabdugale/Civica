@@ -1,0 +1,187 @@
+/* ============================================
+   PS02 Dashboard — shared styles
+   Palette: civic/data-dashboard, not decorative.
+   Priority colors are FUNCTIONAL (map to severity),
+   not just accent choices — keep them consistent
+   everywhere in the app.
+   ============================================ */
+
+:root {
+  --bg: #F6F7F9;
+  --surface: #FFFFFF;
+  --border: #E2E5EA;
+  --text-primary: #1B2A4A;
+  --text-secondary: #5B6478;
+  --text-muted: #8891A3;
+
+  --priority-critical: #C4432E;
+  --priority-high: #D9713C;
+  --priority-medium: #D9A130;
+  --priority-low: #4C9A6A;
+
+  --status-open: #4A6FA5;
+  --status-resolved: #4C9A6A;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.dash-section {
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+}
+
+/* ---------- Cards ---------- */
+.dash-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* ---------- Stat cards ---------- */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--text-primary);
+  border-radius: 6px;
+  padding: 16px 18px;
+}
+
+.stat-card .stat-label {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin: 0 0 6px 0;
+}
+
+.stat-card .stat-value {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.stat-card .stat-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* ---------- Priority badges ---------- */
+.priority-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 20px;
+}
+
+.priority-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.priority-critical { color: var(--priority-critical); background: color-mix(in srgb, var(--priority-critical) 12%, white); }
+.priority-high { color: var(--priority-high); background: color-mix(in srgb, var(--priority-high) 12%, white); }
+.priority-medium { color: var(--priority-medium); background: color-mix(in srgb, var(--priority-medium) 12%, white); }
+.priority-low { color: var(--priority-low); background: color-mix(in srgb, var(--priority-low) 12%, white); }
+
+/* ---------- Map ---------- */
+.map-wrapper {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map-container {
+  height: 480px;
+  width: 100%;
+}
+
+.map-toggle {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1000;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.map-toggle:hover {
+  background: var(--bg);
+}
+
+.map-popup h4 {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+}
+
+.map-popup p {
+  margin: 2px 0;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+/* ---------- Loading state ---------- */
+.state-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid var(--border);
+  border-top-color: var(--text-primary);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  margin-bottom: 14px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.state-container .state-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 4px 0;
+}
+
+.state-container .state-desc {
+  font-size: 13px;
+  margin: 0;
+  max-width: 320px;
+}
+
+.state-container .state-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
