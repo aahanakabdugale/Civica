@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+/**
+ * App.js
+ * Root of the Civica frontend. Handles the auth gate (Login → DashboardHome).
+ *
+ * Group 1 pages (SubmitComplaint, TrackComplaint) and Group 3 pages
+ * (AnalyticsDashboard) will be wired in here once their components are ready.
+ * Use conditional rendering or react-router-dom <Routes> when all groups merge.
+ */
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import { useState } from "react";
+import Login from "./pages/Login";
+import DashboardHome from "./pages/DashboardHome";
+
+export default function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  return loggedIn ? (
+    <DashboardHome onLogout={() => setLoggedIn(false)} />
+  ) : (
+    <Login onLogin={() => setLoggedIn(true)} />
   );
 }
-
-export default App;
