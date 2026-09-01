@@ -1,0 +1,31 @@
+{
+  "critical_keywords": [
+    "fire", "collapse", "death", "flood", "explosion", "electrocution",
+    "drowning", "stampede", "gas leak", "building collapse", "bridge collapse",
+    "child trapped", "lives at risk", "life threatening"
+  ],
+  "high_keywords": [
+    "accident", "injury", "leak", "burst", "emergency", "danger",
+    "broken", "hazard", "toxic", "contaminated", "overflowing",
+    "short circuit", "exposed wire", "crack in wall", "sinkhole",
+    "snake", "stray dog attack", "assault"
+  ],
+  "medium_keywords": [
+    "delay", "shortage", "overflow", "blocked", "damaged", "complaint",
+    "not working", "out of order", "irregular", "pending", "no supply",
+    "poor quality", "unhygienic", "overcrowded", "noise"
+  ],
+  "category_severity": {
+    "Public Safety": 4,
+    "Health & Medical": 4,
+    "Electricity": 3,
+    "Water Supply": 3,
+    "Roads & Infrastructure": 2,
+    "Sanitation & Waste": 2,
+    "Transport": 2,
+    "Environment": 2,
+    "Housing & Construction": 2,
+    "Education": 1,
+    "Other": 1
+  }
+}

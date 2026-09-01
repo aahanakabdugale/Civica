@@ -1,0 +1,28 @@
+{
+  "departments": [
+    "Water Supply",
+    "Electricity",
+    "Roads & Infrastructure",
+    "Sanitation & Waste",
+    "Health & Medical",
+    "Public Safety",
+    "Education",
+    "Transport",
+    "Environment",
+    "Housing & Construction",
+    "Other"
+  ],
+  "department_descriptions": {
+    "Water Supply": "Water pipelines, taps, borewells, tanker supply, water contamination, waterlogging",
+    "Electricity": "Power outages, transformers, streetlights, meters, electrical wiring, short circuits",
+    "Roads & Infrastructure": "Potholes, bridges, footpaths, traffic signals, flyovers, manholes",
+    "Sanitation & Waste": "Garbage collection, drains, sewers, dustbins, public toilets, hygiene",
+    "Health & Medical": "Hospitals, clinics, ambulances, medicines, epidemics, vaccinations",
+    "Public Safety": "Crime, fire, accidents, policing, CCTV, emergency response",
+    "Education": "Schools, colleges, teachers, students, exams, scholarships",
+    "Transport": "Buses, trains, metros, auto-rickshaws, traffic, parking",
+    "Environment": "Air/noise pollution, trees, parks, river/lake contamination",
+    "Housing & Construction": "Building permits, illegal construction, encroachments, housing societies",
+    "Other": "Complaints that don't fit any specific department"
+  }
+}

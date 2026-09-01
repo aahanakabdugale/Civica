@@ -1,0 +1,372 @@
+[
+  {
+    "id": 1,
+    "text": "There is a huge pothole on MG Road near City Mall. Multiple vehicles have been damaged and one person was injured yesterday.",
+    "latitude": 19.0760,
+    "longitude": 72.8777,
+    "expected_category": "Roads & Infrastructure",
+    "expected_priority": "High"
+  },
+  {
+    "id": 2,
+    "text": "MG Road ke paas ek bada gaddha hai, gaadi ka tyre phat gaya. Bahut khatarnak hai.",
+    "latitude": 19.0762,
+    "longitude": 72.8779,
+    "expected_category": "Roads & Infrastructure",
+    "expected_priority": "High",
+    "is_duplicate_of": 1,
+    "language": "hi"
+  },
+  {
+    "id": 3,
+    "text": "No water supply in Sector 15 for the last 3 days. We are buying tanker water at high cost. Please help.",
+    "latitude": 19.0330,
+    "longitude": 73.0297,
+    "expected_category": "Water Supply",
+    "expected_priority": "Medium"
+  },
+  {
+    "id": 4,
+    "text": "Sector 15 mein paani nahi aa raha hai, teen din se supply band hai. Tanker mangana pad raha hai.",
+    "latitude": 19.0332,
+    "longitude": 73.0299,
+    "expected_category": "Water Supply",
+    "expected_priority": "Medium",
+    "is_duplicate_of": 3,
+    "language": "hi"
+  },
+  {
+    "id": 5,
+    "text": "Power outage in Andheri West since last night. Transformer seems to have burst. No electricity for 14 hours.",
+    "latitude": 19.1364,
+    "longitude": 72.8296,
+    "expected_category": "Electricity",
+    "expected_priority": "High"
+  },
+  {
+    "id": 6,
+    "text": "Andheri West mein bijli nahi hai kal raat se. Transformer fatt gaya lagta hai.",
+    "latitude": 19.1366,
+    "longitude": 72.8298,
+    "expected_category": "Electricity",
+    "expected_priority": "High",
+    "is_duplicate_of": 5,
+    "language": "hi"
+  },
+  {
+    "id": 7,
+    "text": "Fire broke out in the slum area near Dharavi. Three shanties have been completely destroyed. Fire brigade has not arrived yet.",
+    "latitude": 19.0426,
+    "longitude": 72.8534,
+    "expected_category": "Public Safety",
+    "expected_priority": "Critical"
+  },
+  {
+    "id": 8,
+    "text": "Dharavi ke jhopdi mein aag lag gayi hai! Teen ghar jal gaye hain. Fire brigade ko bulao jaldi!",
+    "latitude": 19.0428,
+    "longitude": 72.8536,
+    "expected_category": "Public Safety",
+    "expected_priority": "Critical",
+    "is_duplicate_of": 7,
+    "language": "hi"
+  },
+  {
+    "id": 9,
+    "text": "Garbage has not been collected from our lane in Malad for over a week. The entire street smells terrible and there are stray dogs everywhere.",
+    "latitude": 19.1863,
+    "longitude": 72.8486,
+    "expected_category": "Sanitation & Waste",
+    "expected_priority": "Medium"
+  },
+  {
+    "id": 10,
+    "text": "Street lights on Marine Drive promenade have been off for 5 days. It is very dark and unsafe for evening walkers.",
+    "latitude": 18.9432,
+    "longitude": 72.8235,
+    "expected_category": "Electricity",
+    "expected_priority": "Medium"
+  },
+  {
+    "id": 11,
+    "text": "Open manhole near Juhu beach entrance. Very dangerous, especially at night. A child almost fell in yesterday.",
+    "latitude": 19.0988,
+    "longitude": 72.8265,
+    "expected_category": "Roads & Infrastructure",
+    "expected_priority": "High"
+  },
+  {
+    "id": 12,
+    "text": "Sewage water overflowing into the main road at Kurla station area. Very unhygienic conditions. People are falling sick.",
+    "latitude": 19.0726,
+    "longitude": 72.8794,
+    "expected_category": "Sanitation & Waste",
+    "expected_priority": "High"
+  },
+  {
+    "id": 13,
+    "text": "The government hospital in Borivali has no stock of basic medicines. Patients are being turned away.",
+    "latitude": 19.2307,
+    "longitude": 72.8567,
+    "expected_category": "Health & Medical",
+    "expected_priority": "High"
+  },
+  {
+    "id": 14,
+    "text": "Illegal construction happening on the footpath near Dadar station. Shopkeepers have encroached the entire walkway.",
+    "latitude": 19.0178,
+    "longitude": 72.8478,
+    "expected_category": "Housing & Construction",
+    "expected_priority": "Medium"
+  },
+  {
+    "id": 15,
+    "text": "Bus number 467 route has been cancelled without any notice. Hundreds of daily commuters are stranded.",
+    "latitude": 19.0596,
+    "longitude": 72.8295,
+    "expected_category": "Transport",
+    "expected_priority": "Medium"
+  },
+  {
+    "id": 16,
+    "text": "Chemical factory in Thane is releasing toxic fumes. Many residents in the nearby colony are complaining of breathing problems.",
+    "latitude": 19.2183,
+    "longitude": 72.9781,
+    "expected_category": "Environment",
+    "expected_priority": "Critical"
+  },
+  {
+    "id": 17,
+    "text": "Primary school in Vikhroli has a damaged roof. During rains, water leaks into classrooms. Children are at risk.",
+    "latitude": 19.1053,
+    "longitude": 72.9267,
+    "expected_category": "Education",
+    "expected_priority": "High"
+  },
+  {
+    "id": 18,
+    "text": "Exposed electrical wires hanging low near the children's park in Goregaon. Very dangerous for kids.",
+    "latitude": 19.1551,
+    "longitude": 72.8494,
+    "expected_category": "Electricity",
+    "expected_priority": "High"
+  },
+  {
+    "id": 19,
+    "text": "Water pipeline burst on SV Road, Bandra. Water is gushing out and the road is flooded.",
+    "latitude": 19.0596,
+    "longitude": 72.8295,
+    "expected_category": "Water Supply",
+    "expected_priority": "High"
+  },
+  {
+    "id": 20,
+    "text": "Stray dog menace in Powai. A pack of dogs attacked a delivery boy last night. Need animal control.",
+    "latitude": 19.1176,
+    "longitude": 72.9060,
+    "expected_category": "Public Safety",
+    "expected_priority": "High"
+  },
+  {
+    "id": 21,
+    "text": "Traffic signal at Haji Ali junction not working for 3 days. Causing massive traffic jams during peak hours.",
+    "latitude": 18.9827,
+    "longitude": 72.8127,
+    "expected_category": "Roads & Infrastructure",
+    "expected_priority": "Medium"
+  },
+  {
+    "id": 22,
+    "text": "No dustbins in the newly developed Lodha Township area. Residents are dumping garbage in empty plots.",
+    "latitude": 19.2297,
+    "longitude": 72.8657,
+    "expected_category": "Sanitation & Waste",
+    "expected_priority": "Medium"
+  },
+  {
+    "id": 23,
+    "text": "Bridge near Elphinstone Road station has developed cracks. It sways during rush hour. Could collapse any time.",
+    "latitude": 18.9947,
+    "longitude": 72.8428,
+    "expected_category": "Roads & Infrastructure",
+    "expected_priority": "Critical"
+  },
+  {
+    "id": 24,
+    "text": "Dengue outbreak in Chembur. Multiple families affected. Need fumigation and medical camp urgently.",
+    "latitude": 19.0522,
+    "longitude": 72.9005,
+    "expected_category": "Health & Medical",
+    "expected_priority": "Critical"
+  },
+  {
+    "id": 25,
+    "text": "Auto-rickshaw drivers refusing to go by meter in Thane station area. Charging double fare.",
+    "latitude": 19.1858,
+    "longitude": 72.9756,
+    "expected_category": "Transport",
+    "expected_priority": "Low"
+  },
+  {
+    "id": 26,
+    "text": "Noise pollution from a wedding hall in Vile Parle every night until 2 AM. Violating noise regulations.",
+    "latitude": 19.0968,
+    "longitude": 72.8498,
+    "expected_category": "Environment",
+    "expected_priority": "Medium"
+  },
+  {
+    "id": 27,
+    "text": "BEST bus stop shelter collapsed during last night's storm. Broken glass everywhere on the footpath.",
+    "latitude": 19.0215,
+    "longitude": 72.8432,
+    "expected_category": "Transport",
+    "expected_priority": "High"
+  },
+  {
+    "id": 28,
+    "text": "Illegal tree cutting happening in Aarey Colony. About 50 trees have been chopped down already.",
+    "latitude": 19.1537,
+    "longitude": 72.8679,
+    "expected_category": "Environment",
+    "expected_priority": "High"
+  },
+  {
+    "id": 29,
+    "text": "Electric meter reading is wrong. Bill shows 5x normal usage. Nobody from the electricity board is responding.",
+    "latitude": 19.0760,
+    "longitude": 72.8777,
+    "expected_category": "Electricity",
+    "expected_priority": "Low"
+  },
+  {
+    "id": 30,
+    "text": "Sewer gas smell coming from the drain near Mulund check naka. People are feeling nauseous.",
+    "latitude": 19.1724,
+    "longitude": 72.9570,
+    "expected_category": "Sanitation & Waste",
+    "expected_priority": "High"
+  },
+  {
+    "id": 31,
+    "text": "Building collapse in Bhiwandi! Two floors have come down. People may be trapped inside. Please send help immediately!",
+    "latitude": 19.2965,
+    "longitude": 73.0631,
+    "expected_category": "Public Safety",
+    "expected_priority": "Critical"
+  },
+  {
+    "id": 32,
+    "text": "Parking mafia charging illegal fees in Colaba market area. No official receipt given.",
+    "latitude": 18.9067,
+    "longitude": 72.8147,
+    "expected_category": "Transport",
+    "expected_priority": "Low"
+  },
+  {
+    "id": 33,
+    "text": "Government school in Dharavi has no functioning toilets. Students, especially girls, are suffering.",
+    "latitude": 19.0426,
+    "longitude": 72.8534,
+    "expected_category": "Education",
+    "expected_priority": "High"
+  },
+  {
+    "id": 34,
+    "text": "Water tanker mafia operating in Vasai. Diverting municipal water supply and selling it privately.",
+    "latitude": 19.3607,
+    "longitude": 72.8342,
+    "expected_category": "Water Supply",
+    "expected_priority": "High"
+  },
+  {
+    "id": 35,
+    "text": "Speed breaker too high on residential road in Khandala. Ambulance got stuck yesterday. Medical emergency delayed.",
+    "latitude": 18.7570,
+    "longitude": 73.3807,
+    "expected_category": "Roads & Infrastructure",
+    "expected_priority": "High"
+  },
+  {
+    "id": 36,
+    "text": "Metro construction debris blocking the main road in Ghatkopar. Dust is causing respiratory issues.",
+    "latitude": 19.0860,
+    "longitude": 72.9080,
+    "expected_category": "Roads & Infrastructure",
+    "expected_priority": "Medium"
+  },
+  {
+    "id": 37,
+    "text": "Contaminated water coming from taps in Kalyan East. Water is yellowish and smells bad. Children are falling ill.",
+    "latitude": 19.2403,
+    "longitude": 73.1305,
+    "expected_category": "Water Supply",
+    "expected_priority": "Critical"
+  },
+  {
+    "id": 38,
+    "text": "Public park in Bhandup has been taken over by drug addicts. Used syringes found on the ground. Very unsafe for children.",
+    "latitude": 19.1480,
+    "longitude": 72.9370,
+    "expected_category": "Public Safety",
+    "expected_priority": "High"
+  },
+  {
+    "id": 39,
+    "text": "Footpath completely broken near Sion hospital. Wheelchair patients cannot access the main entrance.",
+    "latitude": 19.0410,
+    "longitude": 72.8620,
+    "expected_category": "Roads & Infrastructure",
+    "expected_priority": "Medium"
+  },
+  {
+    "id": 40,
+    "text": "Gas leak reported from a restaurant kitchen on Hill Road, Bandra. Strong smell spreading across the street.",
+    "latitude": 19.0596,
+    "longitude": 72.8295,
+    "expected_category": "Public Safety",
+    "expected_priority": "Critical"
+  },
+  {
+    "id": 41,
+    "text": "Yahan Malad mein kuda uthaya nahi gaya poore hafte se. Bahut badbu aa rahi hai aur macchar badh gaye hain.",
+    "latitude": 19.1865,
+    "longitude": 72.8488,
+    "expected_category": "Sanitation & Waste",
+    "expected_priority": "Medium",
+    "is_duplicate_of": 9,
+    "language": "hi"
+  },
+  {
+    "id": 42,
+    "text": "Scholarship application portal for SC/ST students has been down for 2 weeks. Last date is approaching.",
+    "latitude": 19.0760,
+    "longitude": 72.8777,
+    "expected_category": "Education",
+    "expected_priority": "Medium"
+  },
+  {
+    "id": 43,
+    "text": "New residential building in Mira Road being constructed without proper permits. No safety net around the site.",
+    "latitude": 19.2812,
+    "longitude": 72.8685,
+    "expected_category": "Housing & Construction",
+    "expected_priority": "High"
+  },
+  {
+    "id": 44,
+    "text": "Lake in Powai is turning green due to untreated sewage being discharged. Fish are dying.",
+    "latitude": 19.1269,
+    "longitude": 72.9054,
+    "expected_category": "Environment",
+    "expected_priority": "High"
+  },
+  {
+    "id": 45,
+    "text": "Ambulance took 45 minutes to arrive in Navi Mumbai despite the hospital being 3 km away. Unacceptable delay.",
+    "latitude": 19.0330,
+    "longitude": 73.0297,
+    "expected_category": "Health & Medical",
+    "expected_priority": "High"
+  }
+]
