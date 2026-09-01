@@ -9,7 +9,7 @@
 
 import { useState } from "react";
 import { ShieldCheck, LogOut } from "lucide-react";
-import Navbar from "../components/shared/Navbar";
+import DashboardNavbar from "../components/shared/Navbar";
 import FilterBar from "../components/shared/FilterBar";
 import ComplaintTable from "../components/dashboard/ComplaintTable";
 import ComplaintDetail from "./ComplaintDetail";
@@ -109,7 +109,7 @@ export default function DashboardHome({ onLogout }) {
       {/* ── Main content ── */}
       <div className="flex-1 min-w-0 flex flex-col">
         {/* Top stat strip / navbar */}
-        <Navbar
+        <DashboardNavbar
           onLogout={onLogout}
           openCount={stats.open}
           criticalCount={stats.critical}
