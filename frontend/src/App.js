@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { LanguageProvider } from './context/LanguageContext';
+import { Navbar } from './components/shared/Navbar';
+import { SubmitComplaint } from './pages/SubmitComplaint';
+import { TrackComplaint } from './pages/TrackComplaint';
 
 function App() {
+  const [activeTab, setActiveTab] = useState('submit'); // 'submit' | 'track'
+  const [targetTrackingId, setTargetTrackingId] = useState('');
+
+  const navigateToTrack = (complaintId = '') => {
+    setTargetTrackingId(complaintId);
+    setActiveTab('track');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const navigateToSubmit = () => {
+    setActiveTab('submit');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LanguageProvider>
+      <div className="civica-app">
+        {/* Navigation Bar with Language Switcher */}
+        <Navbar
+          activeTab={activeTab}
+          onSelectTab={(tab) => {
+            if (tab === 'submit') navigateToSubmit();
+            if (tab === 'track') navigateToTrack();
+          }}
+        />
+
+        {/* Active Page View */}
+        {activeTab === 'submit' && (
+          <SubmitComplaint onNavigateToTrack={navigateToTrack} />
+        )}
+
+        {activeTab === 'track' && (
+          <TrackComplaint
+            initialComplaintId={targetTrackingId}
+            onNavigateToSubmit={navigateToSubmit}
+          />
+        )}
+      </div>
+    </LanguageProvider>
   );
 }
 
