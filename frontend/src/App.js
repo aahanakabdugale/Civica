@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/shared/Navbar';
+import SubmitComplaint from './pages/SubmitComplaint';
+import TrackComplaint from './pages/TrackComplaint';
+import Login from './pages/Login';
+import DashboardHome from './pages/DashboardHome';
+import ComplaintDetail from './pages/ComplaintDetail';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<SubmitComplaint />} />
+        <Route path="/track" element={<TrackComplaint />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<DashboardHome />} />
+        <Route path="/complaint/:id" element={<ComplaintDetail />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
